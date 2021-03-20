@@ -5,7 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class career extends Model
+class Materias extends Model
 {
     use HasFactory;
+    protected $table = "materias";
+    protected $fillable = ['id', 'name', 'state', 'created_at', 'updated_at'];
 }
